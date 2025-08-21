@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Regulatory | Kansal & Partners</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Financial.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <a href="../index.html"><img src="../Pics/Kansal & Partners 1.png" alt="Kansal & Partners"></a>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/About.html">About</a></li>
+                <li><a href="../HTML/Service.html">Services</a></li>
+                <li><a href="../HTML/Industry.html">Expertise</a></li>
+                <li><a href="../HTML/FAQs">FAQs</a></li>
+                <li><a href="../HTML/News.html">News and Insights</a></li>
+                <li><a href="../HTML/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="contact-info">
+            <p>Call us 24/7</p>
+            <div class="phone-number">+91 11 4578 5566</div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Kansal & Partners</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="service-container">
+            <!-- Left Side: Image -->
+            <div class="service-image">
+                <img src="../Pics/corporate.png" alt="Automotive Service">
+            </div>
+
+            <!-- Right Side: Service Box -->
+            <div class="service-box">
+                <h2 class="service-heading">Services</h2>
+                <div class="service-list">
+                    <a href="Banking.html" class="service-item">Banking and Finance Law</a>
+                    <span class="divider"></span>
+                    <a href="Capital.html" class="service-item">Capital Markets</a>
+                    <span class="divider"></span>
+                    <a href="Corporate.html" class="service-item">Corporate Law</a>
+                    <span class="divider"></span>
+                    <a href="Dispute.html" class="service-item">Dispute Resolution and Arbitration</a>
+                    <span class="divider"></span>
+                    <a href="Financial.html" class="service-item active">Financial Regulatory</a>
+                    <span class="divider"></span>
+                    <a href="Public.html" class="service-item">Government and Public Sector</a>
+                    <span class="divider"></span>
+                    <a href="Real-Estate.html" class="service-item">Real Estate Law Practice</a>
+                    <span class="divider"></span>
+                    <a href="Tax.html" class="service-item">Tax</a>
+                    <span class="divider"></span>
+                    <a href="White-Collar Crime.html" class="service-item">White-Collar Crime</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <div class="content-container">
+                <h2 class="content-heading">Financial Regulatory Practice</h2>
+                <div class="content-text">
+                    <p>India’s financial sector is one of the most dynamic in the world, shaped by rapid innovation,
+                        evolving compliance requirements, and an active regulatory framework. Our Financial Regulatory
+                        Practice advises banks, non-banking financial companies (NBFCs), fintechs, insurance providers,
+                        asset managers, payment system operators, and other market participants on navigating complex
+                        regulatory landscapes with confidence and precision.
+
+                    </p>
+
+                    <p>We provide end-to-end counsel on:</p>
+                    <ul>
+                        <li><b>Banking Regulation</b> – licensing, prudential norms, Basel III compliance, and RBI
+                            reporting obligations.
+                        </li>
+                        <li><b>Securities & Investment Regulation</b> – SEBI compliance, market conduct rules, portfolio
+                            management, mutual funds, and alternative investment funds (AIFs).
+
+                        </li>
+                        <li><b>Insurance & Pension Regulation</b> – IRDAI guidelines, product structuring, distribution
+                            arrangements, and regulatory filings.
+
+                        </li>
+                        <li><b>Fintech & Payments</b> – digital lending, payment aggregators, UPI systems,
+                            cryptocurrency policy developments, and data privacy compliance.
+
+                        </li>
+                        <li><b>Regulatory Investigations & Enforcement</b> – representation before RBI, SEBI, IRDAI,
+                            PFRDA, FIU-IND, and other statutory bodies.
+
+                        </li>
+                    </ul>
+
+                    <p>Our team combines deep sectoral insight with practical experience in working with Indian
+                        regulators, enabling clients to align business objectives with compliance obligations. We also
+                        assist in <b>regulatory change management</b>, helping institutions adapt to evolving frameworks in
+                        areas such as ESG disclosures, digital assets, and sustainable finance.</p>
+
+                    <p>With our ability to bridge <b>local regulatory requirements</b> and <b>global operational standards</b>, we
+                        provide clients with legally sound, commercially viable, and future-ready solutions in a rapidly
+                        transforming financial ecosystem.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Image -->
+        <div class="footer-image">
+            <img src="../Pics/Footer.png" alt="Footer" class="footer-img">
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all service tab headers
+            const tabHeaders = document.querySelectorAll('.service-tab h3');
+
+            // Add click event to each tab header
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const tab = this.parentElement;
+                    const isActive = tab.classList.contains('active');
+
+                    // Close all tabs
+                    document.querySelectorAll('.service-tab').forEach(t => {
+                        t.classList.remove('active');
+                    });
+
+                    // If the clicked tab wasn't active, activate it
+                    if (!isActive) {
+                        tab.classList.add('active');
+                    }
+                });
+            });
+
+            // Activate the first tab by default
+            if (tabHeaders.length > 0) {
+                tabHeaders[0].parentElement.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

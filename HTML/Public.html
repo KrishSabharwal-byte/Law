@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government & Public Sector | Kansal & Partners</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Public.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <a href="../index.html"><img src="../Pics/Kansal & Partners 1.png" alt="Kansal & Partners"></a>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/About.html">About</a></li>
+                <li><a href="../HTML/Service.html">Services</a></li>
+                <li><a href="../HTML/Industry.html">Expertise</a></li>
+                <li><a href="../HTML/FAQs">FAQs</a></li>
+                <li><a href="../HTML/News.html">News and Insights</a></li>
+                <li><a href="../HTML/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="contact-info">
+            <p>Call us 24/7</p>
+            <div class="phone-number">+91 11 4578 5566</div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Kansal & Partners</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="service-container">
+            <!-- Left Side: Image -->
+            <div class="service-image">
+                <img src="../Pics/corporate.png" alt="Automotive Service">
+            </div>
+
+            <!-- Right Side: Service Box -->
+            <div class="service-box">
+                <h2 class="service-heading">Services</h2>
+                <div class="service-list">
+                    <a href="Banking.html" class="service-item">Banking and Finance Law</a>
+                    <span class="divider"></span>
+                    <a href="Capital.html" class="service-item">Capital Markets</a>
+                    <span class="divider"></span>
+                    <a href="Corporate.html" class="service-item">Corporate Law</a>
+                    <span class="divider"></span>
+                    <a href="Dispute.html" class="service-item">Dispute Resolution and Arbitration</a>
+                    <span class="divider"></span>
+                    <a href="Financial.html" class="service-item">Financial Regulatory</a>
+                    <span class="divider"></span>
+                    <a href="Public.html" class="service-item active">Government and Public Sector</a>
+                    <span class="divider"></span>
+                    <a href="Real-Estate.html" class="service-item">Real Estate Law Practice</a>
+                    <span class="divider"></span>
+                    <a href="Tax.html" class="service-item">Tax</a>
+                    <span class="divider"></span>
+                    <a href="White-Collar Crime.html" class="service-item">White-Collar Crime</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <div class="content-container">
+                <h2 class="content-heading">Government & Public Sector Practice
+                </h2>
+                <div class="content-text">
+                    <p>India’s government and public sector play a pivotal role in shaping the country’s economic growth
+                        through large-scale infrastructure development, public procurement, public-private partnerships
+                        (PPPs), and policy-driven reforms. Our Government & Public Sector Practice advises domestic and
+                        international clients—ranging from multinational corporations to state-owned enterprises—on
+                        engaging effectively with government bodies, navigating regulatory requirements, and
+                        participating in public sector projects.
+
+
+                    </p>
+
+                    <p>We assist clients with:</p>
+                    <ul>
+                        <li><b>Public Procurement & Tender Advisory</b> – bid preparation, compliance review, contract
+                            negotiation, and representation in bid challenges.
+                        </li>
+                        <li><b>Public-Private Partnerships (PPPs)</b> – structuring, documentation, and implementation in
+                            sectors such as transportation, energy, healthcare, and urban development.
+                        </li>
+                        <li><b>Regulatory & Policy Advisory</b> – interpreting and responding to government policies,
+                            legislative developments, and sector-specific regulations.
+                        </li>
+                        <li><b>Government Contracts & Disputes</b> – drafting, negotiation, and representation in contractual
+                            disputes, including before statutory tribunals and arbitral forums.
+                        </li>
+                        <li><b>Compliance & Ethics</b> – anti-bribery, anti-corruption, and public sector compliance programs
+                            in line with domestic law and global best practices.
+                        </li>
+                    </ul>
+
+                    <p>With a deep understanding of India’s administrative and regulatory framework, we combine <b>sector expertise</b> with <b> a solution-oriented approach</b>, enabling clients to work seamlessly with central, state, and local authorities. Our cross-border experience ensures that foreign investors and contractors meet India’s legal standards while aligning with international governance and compliance requirements.
+                    </p>
+
+                    <p>Our team’s experience in <b>policy advocacy, legislative engagement, and dispute resolution</b> positions us as a trusted advisor in projects that intersect the public and private spheres.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Image -->
+        <div class="footer-image">
+            <img src="../Pics/Footer.png" alt="Footer" class="footer-img">
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all service tab headers
+            const tabHeaders = document.querySelectorAll('.service-tab h3');
+
+            // Add click event to each tab header
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const tab = this.parentElement;
+                    const isActive = tab.classList.contains('active');
+
+                    // Close all tabs
+                    document.querySelectorAll('.service-tab').forEach(t => {
+                        t.classList.remove('active');
+                    });
+
+                    // If the clicked tab wasn't active, activate it
+                    if (!isActive) {
+                        tab.classList.add('active');
+                    }
+                });
+            });
+
+            // Activate the first tab by default
+            if (tabHeaders.length > 0) {
+                tabHeaders[0].parentElement.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

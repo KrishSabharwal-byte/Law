@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Markets| Kansal & Partners</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Capital.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo"> 
+            <a href="../index.html"><img src="../Pics/Kansal & Partners 1.png" alt="Kansal & Partners"></a>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/About.html">About</a></li>
+                <li><a href="../HTML/Service.html">Services</a></li>
+                <li><a href="../HTML/Industry.html">Expertise</a></li>
+                <li><a href="../HTML/FAQs">FAQs</a></li>
+                <li><a href="../HTML/News.html">News and Insights</a></li>
+                <li><a href="../HTML/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="contact-info">
+            <p>Call us 24/7</p>
+            <div class="phone-number">+91 11 4578 5566</div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Kansal & Partners</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="service-container">
+            <!-- Left Side: Image -->
+            <div class="service-image">
+                <img src="../Pics/capital.png" alt="Automotive Service">
+            </div>
+
+            <!-- Right Side: Service Box -->
+            <div class="service-box">
+                <h2 class="service-heading">Services</h2>
+                <div class="service-list">
+                    <a href="Banking.html" class="service-item">Banking and Finance Law</a>
+                    <span class="divider"></span>
+                    <a href="Capital.html" class="service-item active">Capital Markets</a>
+                    <span class="divider"></span>
+                    <a href="Corporate.html" class="service-item">Corporate Law</a>
+                    <span class="divider"></span>
+                    <a href="Dispute.html" class="service-item">Dispute Resolution and Arbitration</a>
+                    <span class="divider"></span>
+                    <a href="Financial.html" class="service-item">Financial Regulatory</a>
+                    <span class="divider"></span>
+                    <a href="Public.html" class="service-item">Government and Public Sector</a>
+                    <span class="divider"></span>
+                    <a href="Real-Estate.html" class="service-item">Real Estate Law Practice</a>
+                    <span class="divider"></span>
+                    <a href="Tax.html" class="service-item">Tax</a>
+                    <span class="divider"></span>
+                    <a href="White-Collar Crime.html" class="service-item">White-Collar Crime</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <div class="content-container">
+                <h2 class="content-heading">Capital Markets</h2>
+                <div class="content-text">
+                    <p>India’s capital markets have emerged as one of the most active and diverse in Asia, driven by robust investor participation, regulatory reforms, and a growing appetite for equity and debt financing. Our Capital Markets Practice offers strategic, end-to-end legal support to issuers, underwriters, investors, and intermediaries engaging in both domestic and cross-border securities offerings.</p>
+
+                    <p>We advise on a broad range of transactions, including <b>initial public offerings (IPOs), follow-on public offers (FPOs), qualified institutional placements (QIPs), rights issues, private placements, </b>and<b> listing of debt securities.</b> Our expertise extends to <b>offshore listings </b>(GDRs, ADRs, Masala bonds),<b> high-yield bonds, </b>and<b> structured finance products.</b></p>
+
+                    <p>Our team has deep experience navigating the regulatory framework under <b>SEBI regulations,</b> <b>the Companies Act,</b> <b>FEMA,</b> stock exchange listing requirements, and other sector-specific compliance mandates. We assist clients through every stage—from structuring and due diligence to drafting offer documents, coordinating with regulators, and ensuring smooth execution of offerings.</p>
+
+                    <p>We also advise on <b>corporate governance requirements, continuous disclosure obligations,</b> and<b> insider trading compliance,</b> as well as represent clients in regulatory investigations and enforcement proceedings before SEBI, stock exchanges, and other authorities.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Image -->
+        <div class="footer-image">
+            <img src="../Pics/Footer.png" alt="Footer" class="footer-img">
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all service tab headers
+            const tabHeaders = document.querySelectorAll('.service-tab h3');
+
+            // Add click event to each tab header
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const tab = this.parentElement;
+                    const isActive = tab.classList.contains('active');
+
+                    // Close all tabs
+                    document.querySelectorAll('.service-tab').forEach(t => {
+                        t.classList.remove('active');
+                    });
+
+                    // If the clicked tab wasn't active, activate it
+                    if (!isActive) {
+                        tab.classList.add('active');
+                    }
+                });
+            });
+
+            // Activate the first tab by default
+            if (tabHeaders.length > 0) {
+                tabHeaders[0].parentElement.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
